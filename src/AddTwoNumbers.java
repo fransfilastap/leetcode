@@ -21,9 +21,8 @@ public class AddTwoNumbers {
             sum += savedDigit;
 
             if(sum > 9){
-                String[] sSum = String.valueOf(sum).split("");
-                savedDigit = Integer.valueOf(sSum[0]);
-                temp = new ListNode(Integer.valueOf(sSum[1]));
+                savedDigit= 1;
+                temp = new ListNode(sum%10);
             }else {
                 savedDigit=0;
                 temp = new ListNode(sum);
